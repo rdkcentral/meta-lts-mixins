@@ -137,13 +137,21 @@ TARGET_C_INT_WIDTH[arm-eabi] = "32"
 MAX_ATOMIC_WIDTH[arm-eabi] = "64"
 FEATURES[arm-eabi] = "+v6,+vfp2"
 
-## armv7-unknown-linux-gnueabihf
+## armv7-unknown-linux-gnueabi (soft-float)
 DATA_LAYOUT[armv7-eabi] = "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64"
 TARGET_ENDIAN[armv7-eabi] = "little"
 TARGET_POINTER_WIDTH[armv7-eabi] = "32"
 TARGET_C_INT_WIDTH[armv7-eabi] = "32"
 MAX_ATOMIC_WIDTH[armv7-eabi] = "64"
 FEATURES[armv7-eabi] = "+v7,+vfp2,+thumb2"
+
+## armv7-unknown-linux-gnueabihf (hard-float)
+DATA_LAYOUT[armv7-eabihf] = "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64"
+TARGET_ENDIAN[armv7-eabihf] = "little"
+TARGET_POINTER_WIDTH[armv7-eabihf] = "32"
+TARGET_C_INT_WIDTH[armv7-eabihf] = "32"
+MAX_ATOMIC_WIDTH[armv7-eabihf] = "64"
+FEATURES[armv7-eabihf] = "+v7,+vfp2,+thumb2"
 
 ## aarch64-unknown-linux-{gnu, musl}
 DATA_LAYOUT[aarch64] = "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32"
